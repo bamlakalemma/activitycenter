@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
 
     # Django AllAuth
     'allauth',
@@ -37,16 +38,17 @@ INSTALLED_APPS = [
     # Your apps
     'users',
     'clubs',
-    'events',
+    #'events',
     'messaging',
     'polls',
     'feedback',
-    'announcements',
+    #'announcements',
     'analytics',
     'activity_center_admin',
     'club_leader',
     'rector',
     'club_member',
+    #'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +79,7 @@ AUTHENTICATION_BACKENDS = [
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
 
-SITE_ID = 5
+SITE_ID = 6
 
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
 ACCOUNT_SIGNUP_REDIRECT_URL = '/accounts/login/'  

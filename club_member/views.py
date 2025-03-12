@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import ClubMember, MembershipTerminationRequest
 from clubs.models import Club, ClubDocument
-from events.models import Event
+from clubs.models import Event
 from feedback.models import Feedback
 from users.models import User
 
@@ -75,7 +75,6 @@ def join_club(request):
 
     return redirect("club_member:dashboard")
 
-from django.contrib.auth.decorators import login_required
 
 def leave_club(request, club_id):
     """Request to leave a club (needs approval)"""
